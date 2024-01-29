@@ -1,1 +1,1 @@
-This contains notes and homework from DataTalks.Club Data Engineering Zoomcamp.
+This contains notes from DataTalks.Club Data Engineering Zoomcamp.
