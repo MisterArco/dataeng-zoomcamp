@@ -1,0 +1,12 @@
+
+*.csv.gz
+*.csv
+.ipynb_checkpoints
+credentials
+ny_taxi_postgres_data/
+pgadmin_data/
+*.tfstate
+*.tfstate.backup
+
+*.json
+*.json.gz
