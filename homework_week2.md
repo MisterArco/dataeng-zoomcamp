@@ -1,11 +1,5 @@
 ## Homework Week 2 
 
-> In case you don't get one option exactly, select the closest one 
-
-For the homework, we'll be working with the _green_ taxi dataset located here:
-
-`https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green/download`
-
 ### Assignment
 
 The goal will be to construct an ETL pipeline that loads the data, performs some transformations, and writes the data to a database (and Google Cloud!).
@@ -246,6 +240,7 @@ def export_data(data, *args, **kwargs):
 
 ## Google Cloud Bucket
 
-~[]
+![](resources/images_week_2/gcs1.png)
+![](resources/images_week_2/gcs2.png)
 
 
