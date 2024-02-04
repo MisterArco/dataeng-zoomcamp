@@ -9,4 +9,6 @@ This contains notes from DataTalks.Club [Data Engineering Zoomcamp](https://gith
 * *Google Cloud Platform (GCP)*: Cloud-based auto-scaling platform by Google. 
   * *Google Cloud Storage (GCS)*: Data Lake
   * *BigQuery*: Data Warehouse
+* *Mage*: A modern replacement for Airflow for transforming and integrating data.
+    
 
