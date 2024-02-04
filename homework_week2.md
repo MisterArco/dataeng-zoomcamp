@@ -182,6 +182,7 @@ def test_output(output, *args) -> None:
 ```
 
 ## Data Exporter (Postgres Database)
+```
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
 from mage_ai.io.postgres import Postgres
@@ -193,7 +194,6 @@ if 'data_exporter' not in globals():
 
 
 @data_exporter
-```
 def export_data_to_postgres(df: DataFrame, **kwargs) -> None:
     schema_name = 'mage'  # Specify the name of the schema to export data to
     table_name = 'green_taxi'  # Specify the name of the table to export data to
@@ -219,7 +219,7 @@ import os
 if 'data_exporter' not in globals():
     from mage_ai.data_preparation.decorators import data_exporter
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/src/mage-zoomcamp-413020-fafc61704a55.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/src/secret.json"
 
 bucket_name = 'mage-zoomcamp-jp-2'
 project_id = 'mage-zoomcamp-413020'
@@ -244,5 +244,8 @@ def export_data(data, *args, **kwargs):
     )
 ```
 
+## Google Cloud Bucket
+
+~[]
 
 
