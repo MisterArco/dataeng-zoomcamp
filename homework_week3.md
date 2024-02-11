@@ -73,9 +73,12 @@ It is best practice in Big Query to always cluster your data:
 ## (Bonus: Not worth points) Question 8:
 No Points: Write a `SELECT count(*)` query FROM the materialized table you created. How many bytes does it estimate will be read? Why?
 
-<b>The query processed for 0 bytes when executed, this is due to partitioning and clusteringm, it helps reduce memory usage and improve performance by optimizing data storage and retrieval. Partitioning reduces the amount of data scanned for each query, while clustering organizes data within partitions to improve query performance.</b>
+![](resources/images_week_3/question8.png)
 
-### SOLUTION
+
+<b>The query processed for 0 bytes when executed, this is due to partitioning and clustering, it helps reduce memory usage and improve performance by optimizing data storage and retrieval. Partitioning reduces the amount of data scanned for each query, while clustering organizes data within partitions to improve query performance.</b>
+
+### SOLUTIONS:
 
 ```
 # Creates an external table using the Green Taxi Trip Records Data for 2022.
