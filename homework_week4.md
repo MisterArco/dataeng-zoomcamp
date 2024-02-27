@@ -34,6 +34,44 @@ Run the dbt model without limits (is_test_run: false).
 - 32998722
 - 42998722
 
+```
+# STAGING MODEL
+{{
+    config(
+        materialized='view'
+    )
+}}
+
+select *
+from {{ source('staging', 'fhv_tripdata') }}
+where EXTRACT(YEAR FROM pickup_datetime) = 2019
+
+# CORE MODEL
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+with fhv_tripdata as (
+    select * from {{ ref('stg_fhv_tripdata') }}
+), 
+dim_zones as (
+    select * from {{ ref('dim_zones') }}
+    where borough != 'Unknown'
+)
+select 
+    pickup_zone.borough as pickup_borough, 
+    pickup_zone.zone as pickup_zone, 
+    dropoff_zone.borough as dropoff_borough, 
+    dropoff_zone.zone as dropoff_zone  
+from fhv_tripdata
+inner join dim_zones as pickup_zone
+on fhv_tripdata.PUlocationID = pickup_zone.locationid
+inner join dim_zones as dropoff_zone
+on fhv_tripdata.DOlocationID = dropoff_zone.locationid
+```
+
 ### Question 4 (2 points)
 
 **What is the service that had the most rides during the month of July 2019 month with the biggest amount of rides after building a tile for the fact_fhv_trips table?**
