@@ -34,6 +34,8 @@ Run the dbt model without limits (is_test_run: false).
 - 32998722
 - 42998722
 
+![](resources/images_week_4/counts.png)
+
 ```
 # STAGING MODEL
 {{
@@ -78,10 +80,14 @@ on fhv_tripdata.DOlocationID = dropoff_zone.locationid
 
 Create a dashboard with some tiles that you find interesting to explore the data. One tile should show the amount of trips per month, as done in the videos for fact_trips, including the fact_fhv_trips data.
 
-- FHV
+- FHV ✔️
 - Green
 - Yellow
 - FHV and Green
+
+![](resources/images_week_4/chart1.png)
+
+![](resources/images_week_4/chart2.png)
 
 
 
