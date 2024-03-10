@@ -1,4 +1,4 @@
-## Week 5 Solution Homework
+## Module 5 Solution Homework
 
 In this homework we'll put what we learned about Spark in practice.
 
@@ -15,7 +15,7 @@ For this homework we will be using the FHV 2019-10 data found here. [FHV Data](h
 
 What's the output?
 
-
+![](resources/images_week_5/version.png)
 
 ### Question 2: 
 
@@ -31,6 +31,8 @@ What is the average size of the Parquet (ending with .parquet extension) Files t
 - 6MB ✔️
 - 25MB
 - 87MB
+
+![](resources/images_week_5/size.png)
 
 ### Question 3: 
 
@@ -88,6 +90,8 @@ Spark’s User Interface which shows the application's dashboard runs on which l
 - 443
 - 4040 ✔️
 - 8080
+
+![](resources/images_week_5/spark.png)
 
 ### Question 6: 
 
