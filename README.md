@@ -1,11 +1,11 @@
-This contains notes and solutions from DataTalks.Club [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp).
+This contains notes and solutions from DataTalks.Club [Data Engineering Zoomcamp 2024 Cohort](https://github.com/DataTalksClub/data-engineering-zoomcamp).
 
-## Overview
+## Overview 
 
-### Architecture Diagram
+### Architecture 
 ![](resources/architecture/architecture.jpeg)
 
-### Technologies Used
+### Technologies 
 * *Google Cloud Platform (GCP)*: Cloud-based auto-scaling platform by Google. 
   * *Google Cloud Storage (GCS)*: Data Lake
   * *BigQuery*: Data Warehouse
