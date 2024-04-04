@@ -9,3 +9,4 @@ pgadmin_data/
 *.log
 *.json
 *.json.gz
+03-data-warehouse/airflow/logs/scheduler/latest
