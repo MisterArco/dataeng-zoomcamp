@@ -6,6 +6,6 @@ ny_taxi_postgres_data/
 pgadmin_data/
 *.tfstate
 *.tfstate.backup
-
+*.log
 *.json
 *.json.gz
